@@ -2,8 +2,8 @@
   "albums": [
     {
       "id": "1",
-      "name": "BE",
-      "artist": "BTS",
+      "name": "BE-We",
+      "artist": "BTS-We",
       "genre": "K-Pop",
       "year": 2020,
       "no_of_songs": "4",
@@ -23,7 +23,6 @@
         }
       ]
     },
-
     {
       "id": "2",
       "name": "Starting Over",
@@ -41,7 +40,6 @@
         }
       ]
     },
-
     {
       "id": "3",
       "name": "Harmony",
@@ -82,7 +80,6 @@
         }
       ]
     },
-
     {
       "id": "5",
       "name": "Starting Over",
@@ -106,7 +103,6 @@
         }
       ]
     },
-
     {
       "id": "6",
       "name": "We Need A Little Christmas",
@@ -127,7 +123,6 @@
         }
       ]
     },
-
     {
       "id": "7",
       "name": "My Gift",
@@ -145,7 +140,6 @@
         }
       ]
     },
-
     {
       "id": "8",
       "name": "Hey World",
@@ -169,7 +163,6 @@
         }
       ]
     },
-
     {
       "id": "9",
       "name": "A Holly Dolly Christmas",

@@ -1,16 +1,16 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import styled from 'styled-components';
-import { getMusicRecords } from '../Redux/action'
+import { getMusicRecords } from '../Redux/AppReducer/action'
 import { store } from '../Redux/store';
-import {useSearchParams} from "react-router-dom"
+import {Link, useSearchParams} from "react-router-dom"
 import { useLocation } from 'react-router-dom';
 
 const MusicRecords = () => {
     const dispatch= useDispatch();
     const [searchParams] = useSearchParams();
     
-    const musicRecords = useSelector((store)=>store.musicRecords);
+    const musicRecords = useSelector((store)=>store.AppReducer.musicRecords);
 
     const location= useLocation();
 
@@ -28,13 +28,14 @@ const MusicRecords = () => {
        }
     },[location.search]);
 
-    console.log(location)
+    console.log(musicRecords)
   return (
 
     <>
             {musicRecords.length>0 && musicRecords.map((album)=>{
                 return (
                     <MusicRecordsWrapper key={album.id}>
+                        <Link to={`/music/${album.id}`}>
                         <div>
                             {album.name}
                         </div>
@@ -45,6 +46,7 @@ const MusicRecords = () => {
                         <div>
                             {album.year}
                         </div>
+                        </Link>
                     </MusicRecordsWrapper>
                 )
             })}
